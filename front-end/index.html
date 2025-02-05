@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WVR - Web Visibility Risk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="WVR Logo">
+        </div>
+        <h1>WVR - Web Visibility Risk</h1>
+    </header>
+
+    <main>
+        <section class="search-form">
+            <h2>Verifique a Superfície de Ataque</h2>
+            <form id="search-form">
+                <label for="domain">Informe o domínio ou IP:</label>
+                <input type="text" id="domain" name="domain" placeholder="exemplo.com ou 192.168.0.1" required>
+                <button type="submit">Buscar Vulnerabilidades</button>
+            </form>
+        </section>
+
+        <section id="results" class="results-section">
+            <h2>Resultados</h2>
+            <div id="loading" class="loading" style="display:none;">Buscando...</div>
+            <div id="report" class="report"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WVR - Web Visibility Risk | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
